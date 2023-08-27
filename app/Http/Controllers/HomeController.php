@@ -100,6 +100,28 @@ class HomeController extends Controller
         return view('rooms-slot', compact('objs', 'game'));
     }
 
+
+    public function online_user(){
+        
+
+        return response()->json([
+            'count' => rand(2500,3500)
+          ]);
+
+    }
+
+    public function room_percents(Request $request){
+
+        //   $request->casino
+   
+        $objs = room::where('casino', $request->casino)->get();
+   
+        return response()->json(
+           $objs
+         );
+   
+       }
+
     public function call_percent(){
 
         $room = room::where('room_status', 1)->get();

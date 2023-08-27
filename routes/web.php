@@ -52,7 +52,8 @@ Route::post('custom-login', [CustomAuthController::class, 'customLogin'])->name(
 
 Route::get('/game-room-{id}-{room}', [App\Http\Controllers\HomeController::class, 'game_room'])->name('game_room');
 
-
+Route::get('/api/game/online_user', [App\Http\Controllers\HomeController::class, 'online_user'])->name('online_user');
+Route::get('/rooms/room_percents', [App\Http\Controllers\HomeController::class, 'room_percents'])->name('room_percents');
 
 Route::group(['middleware' => ['UserRole:superadmin|admin']], function() {
 
