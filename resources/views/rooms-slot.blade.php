@@ -70,7 +70,7 @@
                                     <div class="bg-game-slot" style="width: 117px; height:81px; padding: 8px 10px 12px 10px; }}');">
                                         <p class="gameName-p6"> {{ $u->room }} </p>
                                         <div class="d-flex justify-content-between" style="margin-top:12px">
-                                            <img src="https://auto.deksilp.com/images/images/game/room/{{ $u->room_image }}" style="width: 38px; height: 38px; border-radius: 5px;">
+                                            <img src="https://auto.deksilp.com/images/game/room/{{ $u->room_image }}" style="width: 38px; height: 38px; border-radius: 5px;">
                                             <div class="text-center">
                                                 <p class="winrate"> อัตราการชนะ </p>
                                                 <p class="percen_winrate"> {{ $u->percent }}% </p>
