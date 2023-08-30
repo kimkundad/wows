@@ -186,7 +186,7 @@
                                     <!--end::Col-->
                                 </div>
 
-
+                                @if(Auth::user()->roles[0]['name'] === 'superadmin')
                                 <div class="row mb-6">
                                     <!--begin::Label-->
                                     <label class="col-lg-4 col-form-label fw-semibold fs-6">Role User</label>
@@ -210,6 +210,8 @@
                                     </div>
                                     <!--end::Col-->
                                 </div>
+                                @endif
+                                
 
                                 <div class="row mb-6">
                                     <!--begin::Label-->
